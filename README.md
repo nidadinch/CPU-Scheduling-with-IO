@@ -9,15 +9,24 @@ It is a project for Akdeniz University Computer Science Department - Operating S
 
 A  program  to compare the  performance of FCFS algorithm.This program  gets a filename (e.g., “jobs.txt”) as the command-line input and read the contents  of  the file. Provided file contains a set of processes and a set of associated CPU and I/O bursts that shown in below:
 
+```sh
+   
 1:(45,15);(16,20);(80,10);(40,-1)
 
 2:(15,10);(60,15);(90,10);(85,20);(20,-1)
 
 3:(30,15);(40,20);(5,15);(10,15);(15,-1)
 
-The general format of a line is as follows:
+   ```
 
+The general format of a line is as follows: 
+
+```sh
+   
 <process-id>:(<cpu-burst1, io-burst1>);(<cpu-burst2, io-burst2>);...(<cpu-bursti, io-bursti>) 
+
+   ```
+
 
 The first token is the unique process id. After process-id we have a colon(:) delimiter. Then you will see a list of tuples separated semicolons (;). Each tuple in parentheses indicates the next cpu-burst and io-burst lengths of the process.The cpu and io burst length in terms of milliseconds. 
 
